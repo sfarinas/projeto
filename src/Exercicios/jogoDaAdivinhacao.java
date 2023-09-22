@@ -14,7 +14,7 @@ public class jogoDaAdivinhacao {
         do {
             System.out.println("----- Sorteando numero entre 0 e 100 ------ \n");
             Random numeroAleatorio = new Random();
-            numeroSorteado = numeroAleatorio.nextInt(501);
+            numeroSorteado = numeroAleatorio.nextInt(101);
 
             System.out.println("Começou o jogo! Sera que consegue me vencer?");
             tentativas = 0;
@@ -34,7 +34,7 @@ public class jogoDaAdivinhacao {
                     break;
                 }
             }while (tentativas != 10);
-            System.out.println(" Digite 0 para sair, ou qualquer outro numero para continuar");
+            System.out.println(" Digite 0 para sair, ou qualquer outro numero para continuar, O numero Sorteado era " + numero);
             continuar = sc.nextInt();
 
         } while (continuar != 0);
