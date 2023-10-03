@@ -15,7 +15,7 @@ public class mediaUva {
 
         for (int i = 0; i < notas.length; i++){
             System.out.println("Digite a nota "+ (i + 1 ) + " do aluno: ");
-            notas[i] = sc.nextInt();
+            notas[i] = sc.nextDouble();
 
 
         }
